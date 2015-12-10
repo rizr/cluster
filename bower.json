@@ -1,0 +1,22 @@
+{
+  "name": "webInterFaceCluster",
+  "authors": [
+    "Eugene Dementev <rizr91@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-ui-router": "~0.2.15",
+    "angular": "~1.4.8"
+  }
+}
