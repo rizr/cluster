@@ -1,0 +1,21 @@
+{
+  "name": "web-interface",
+  "version": "1.0.0",
+  "description": "web-interface for cluster backend",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rizr/clusterFront.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rizr/clusterFront/issues"
+  },
+  "homepage": "https://github.com/rizr/clusterFront",
+  "devDependencies": {
+    "gulp-inject": "^3.0.0"
+  }
+}
