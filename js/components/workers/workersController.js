@@ -1,3 +1,2 @@
-/**
- * Created by evgen on 12/11/15.
- */
+app.controller('workerController', ['$scope', function ($scope) {
+}]);
