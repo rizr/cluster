@@ -11,8 +11,8 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
             controller: 'authController'
         })
         .state('workers', {
-            url: '/workers'
-            //  templateUrl: 'js/components/auth/view/signinForm.html'
+            url: '/workers',
+            templateUrl: 'js/components/workers/view/workers.html'
         })
         .state('tasks', {
             url: '/tasks'
