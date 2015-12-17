@@ -7,12 +7,12 @@ app.service('workerService', ['$resource', function ($resource) {
     var service = {
         workersStatus: function (data, cb) {
             workers.status(data, function (resp) {
-                cb(resp.error, resp.data);
+                cb(resp);
             });
         },
         createTask: function (data, cb) {
             workers.createTask(data, function (resp) {
-                cb(resp.error, resp.data);
+                cb(resp);
             });
         }
     };
