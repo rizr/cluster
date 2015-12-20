@@ -3,6 +3,6 @@ app.directive('workerList', function () {
         link: function (scope, element, attr) {
         },
         templateUrl: 'js/components/workers/directiveTemplate/workerList.html',
-        restrict: 'E'
+        restrict: 'EA'
     }
 });

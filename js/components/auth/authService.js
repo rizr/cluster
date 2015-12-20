@@ -9,10 +9,9 @@ app.service('authService', ['$resource', function ($resource) {
     var service = {
         signin: function (data, cb) {
             auth.signin(data, function (resp) {
-                console.log(resp);
-                cb(resp);
+                cb(null, resp);
             }, function (error) {
-                console.log(error);
+                cb(error);
             });
         },
         logout: function (data, cb) {

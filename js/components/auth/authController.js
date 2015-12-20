@@ -1,8 +1,12 @@
-app.controller('authController', ['authService', '$scope', function (authService, $scope) {
+app.controller('authController', ['authService', '$scope', '$state', function (authService, $scope, $state) {
     $scope.signin = function () {
         authService.signin($scope.loginData, function (error, resp) {
-            console.log(error, resp);
-            localStorage.token = resp.token;
+            if (error) {
+                $scope.error = "Wrong password or login";
+            } else {
+                localStorage.token = resp.token;
+                $state.go('workers');
+            }
         })
     }
 }]);
