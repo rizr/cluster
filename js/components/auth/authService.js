@@ -1,4 +1,4 @@
-app.service('authService', ['$resource', function ($resource) {
+app.service('authService', ['$resource', '$rootScope', function ($resource, $rootScope) {
 
     var auth = $resource('http://127.0.0.1:8888/api/auth/:action', {}, {
         signin: {params: {action: 'signin'}, method: 'POST'},
@@ -16,12 +16,16 @@ app.service('authService', ['$resource', function ($resource) {
         },
         logout: function (data, cb) {
             auth.logout(data, function (resp) {
-                cb(resp);
+                cb(null, resp);
+            }, function (error) {
+                cb(error);
             });
         },
         signup: function (data, cb) {
             auth.logout(data, function (resp) {
-                cb(resp);
+                cb(null, resp);
+            }, function (error) {
+                cb(error);
             });
         }
     };

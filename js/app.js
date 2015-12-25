@@ -12,10 +12,12 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
         })
         .state('workers', {
             url: '/workers',
-            templateUrl: 'js/components/workers/view/workers.html'
+            templateUrl: 'js/components/workers/view/workers.html',
+            controller: 'workerController'
         })
         .state('tasks', {
-            url: '/tasks'
-         //   templateUrl: 'js/components/auth/view/signinForm.html'
+            url: '/tasks',
+            templateUrl: 'js/components/tasks/view/tasks.html',
+            controller: 'taskController'
         })
 }]);
